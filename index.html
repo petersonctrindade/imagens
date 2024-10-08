@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #galeria {
+            margin: 2em;
+            display: flex;
+            height: 20em;
+            gap: 0.1em;
+        }
+
+        #galeria div {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        #galeria div:hover {
+            flex: 3;
+            transform: rotate(30deg);
+
+        }
+
+        #galeria:hover div:not(:hover) {
+            filter: grayscale(100%) blur(1px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens</h1>
+    
+    <div id="galeria">
+        <div style="background-image: url(https://res.cloudinary.com/teepublic/image/private/s--e78eBmZM--/c_crop,x_10,y_10/c_fit,h_1147/c_crop,g_north_west,h_1260,w_945,x_-258,y_-57/co_rgb:e6e1fa,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_945/fl_layer_apply,g_north_west,x_-258,y_-57/bo_105px_solid_white/e_overlay,fl_layer_apply,h_1260,l_Misc:Art%20Print%20Bumpmap,w_945/e_shadow,x_6,y_6/c_limit,h_1254,w_1254/c_lpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1664291987/production/designs/35238748_0.jpg);"></div>
+        <div style="background-image: url(https://i.pinimg.com/236x/f8/db/6d/f8db6d3693ca90e322af6c2fb2f962df.jpg);"></div>
+        <div style="background-image: url(https://i.pinimg.com/236x/10/18/cb/1018cb6b7c40cc1249dfbc3371eeebfc.jpg);"></div>
+        <div style="background-image: url(https://i.pinimg.com/236x/41/af/2d/41af2d3c2bf95a66718d354d438d432d.jpg);"></div>
+        <div style="background-image: url(https://res.cloudinary.com/teepublic/image/private/s--_goWMuFS--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/t_watermark_lock/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1696672292/production/designs/51524198_0.jpg);"></div>
+        <div style="background-image: url(https://media.tenor.com/mjG1U2rMrzoAAAAe/touhou-fumo-fumo-touhou.png);"></div>
+        <div style="background-image: url(https://m.media-amazon.com/images/I/61Yrm5iRbCL.jpg);"></div>
+        <div style="background-image: url(https://img.ifunny.co/images/cbbdbab2b963cff64e3d52c6aa0031ba70a8e5b7ea9b7387f8c659f4092fc36b_1.jpg);"></div>
+    </div>
+</body>
+</html>
